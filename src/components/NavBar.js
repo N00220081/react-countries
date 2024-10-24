@@ -12,9 +12,6 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link as={Link} to="/weather" className="nav-item-custom">
-                            Weather
-                        </Nav.Link>
                         <Nav.Link as={Link} to="/holiday" className="nav-item-custom">
                             National Holiday
                         </Nav.Link>

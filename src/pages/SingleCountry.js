@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from 'axios';
 import { Row, Col, Image, ListGroup } from 'react-bootstrap';
@@ -104,6 +104,12 @@ const SingleCountry = () => {
                         </ListGroup.Item>
                     )}
                     
+                    {/* National Holidays Link */}
+                    <ListGroup.Item>
+                        <Link to={`/country/${country.name.common}/holidays`}>
+                            View National Holidays
+                        </Link>
+                    </ListGroup.Item>
                 </ListGroup>
             </Col>
         </Row>

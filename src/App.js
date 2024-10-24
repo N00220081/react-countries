@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar";
 //import pages
 import Home from './pages/Home';
 import SingleCountry from './pages/SingleCountry';
+import NationalHolidays from "./components/NationalHolidays";
 
 import { Container } from 'react-bootstrap';
 
@@ -17,6 +18,7 @@ const App = () => {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/country/:name' element={<SingleCountry />} />
+                <Route path='/country/:name/holidays' element={<NationalHolidays />} />
             </Routes>
         </Router>
         </Container>
