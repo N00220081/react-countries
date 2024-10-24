@@ -1,0 +1,41 @@
+/* Custom Navbar Styles */
+
+.navbar {
+    background-color: #343a40; /* Dark background */
+    padding: 1rem 1.5rem; /* Adjust the padding for a more spacious look */
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    color: #FFB800; /* Golden yellow hover effect */
+}
+
+.nav-item-custom {
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-item-custom:hover {
+    color: #FFB800; /* Blue hover effect */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+    
+    .nav-item-custom {
+        text-align: center;
+        padding: 1rem;
+    }
+}

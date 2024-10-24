@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import CountryCard from '../components/CountryCard';
 import Filter from '../components/Filter';  // Import the new Filter component
-import { Row, Spinner, Alert } from 'react-bootstrap';
+import { Row, Spinner, Alert, Container } from 'react-bootstrap';
 
 const Home = () => {
   const [countriesList, setCountriesList] = useState([]);
@@ -69,7 +69,7 @@ const Home = () => {
   });
 
   return (
-    <div>
+    <Container>
       <Filter
         searchTerm={searchTerm}
         handleSearchChange={handleSearchChange}
@@ -91,7 +91,7 @@ const Home = () => {
       <Row md={3} xs={1}>
         {countryCards.length > 0 ? countryCards : <p>No countries found.</p>}
       </Row>
-    </div>
+    </Container>
   );
 };
 
