@@ -104,12 +104,6 @@ const SingleCountry = () => {
                         </ListGroup.Item>
                     )}
                     
-                    {/* National Holidays Link */}
-                    <ListGroup.Item>
-                        <Link to={`/country/${country.name.common}/holidays`}>
-                            View National Holidays
-                        </Link>
-                    </ListGroup.Item>
                 </ListGroup>
             </Col>
         </Row>
